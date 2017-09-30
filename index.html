@@ -34,7 +34,7 @@
 				form.setAttribute("method", method);
 				form.setAttribute("action", path);
 
-				for(var key in params) {
+				/*for(var key in params) {
 					console.log('key ='+key + ' params ='+params);
 					if(params.hasOwnProperty(key)) {
 						var hiddenField = document.createElement("input");
@@ -44,8 +44,35 @@
 
 						form.appendChild(hiddenField);
 					 }
-				}
-
+				}*/
+				//grant_type
+						var hiddenField1 = document.createElement("input");
+						hiddenField1.setAttribute("type", "hidden");
+						hiddenField1.setAttribute("name", "grant_type");
+						hiddenField1.setAttribute("value", "authorization_code");
+						form.appendChild(hiddenField1);
+						
+						var clientIDVal = '0a07a77d-ee2e-477e-93ca-fd7f59421237';
+						var hiddenField2 = document.createElement("input");
+						hiddenField2.setAttribute("type", "hidden");
+						hiddenField2.setAttribute("name", "client_id");
+						hiddenField2.setAttribute("value", clientIDVal);
+						form.appendChild(hiddenField2);
+				
+						var code_Val = 'AQABAAIAAAABlDrqfEFlSaui6xnRjX5EATAcQ9ONQUhxKbCEk1gn5671oavYuWTFz9mVLsmpb8pCeniTTQFnx3CXaggarVbozyi8fHbJDzQ1oRvV5JlbUH4XvP2KE319545k011JN7Su2TfYgNwMBb4QuBgPRs-pTnhVm1qzadpbbu31r7gDxl1oKFD1KrbdzmPGKv5BMHQ1UlOtgIrTcD0HrV44g0wmc5hTagNzUcn1W9AGcWC0JhpWOhEuPE688KHwMrJzUNVAOyqRg69nvNr_27JtayZrv2Z3yN7rByn5Zkn5bHTpL8GMvbu-ffuvfObSVhEIQpsXdL8_VGProYc-K5alE0SixyPOnix5dHEtAeSS5RLX76TTHbZa6eOSRfg5MQK-wNtT5NHArXomphGQkIV2ggbz2ny8ZovZtIrjicvulMtAOdslGf98EB8Jq_t_lj5yCRG-N9lutPwu3UsGbvpflZv8SyTqHl1mj6PNeWNJ1Zk8wUnrVnExELzhfMmJhFPKgIOy2t4PqGb7qD65kfY1v379-ctsx-THIQHONIPVV1tiH3DqsNfV-gGWAxcbPDEOI94gAA';
+						var hiddenField3 = document.createElement("input");
+						hiddenField3.setAttribute("type", "hidden");
+						hiddenField3.setAttribute("name", "code");
+						hiddenField3.setAttribute("value", code_Val);
+						form.appendChild(hiddenField3);
+						
+						var clientSecret_Val = 'Km3aaZ+MavtvfXagfIHQ6bzFWfkXCXZgM8SGJ6VptyI=';
+						var hiddenField4 = document.createElement("input");
+						hiddenField4.setAttribute("type", "hidden");
+						hiddenField4.setAttribute("name", "client_secret");
+						hiddenField4.setAttribute("value", clientSecret_Val);
+						form.appendChild(hiddenField4);
+				
 				document.body.appendChild(form);
 				alert('before submit form');
 				form.submit();
