@@ -72,6 +72,13 @@
 						hiddenField4.setAttribute("name", "client_secret");
 						hiddenField4.setAttribute("value", clientSecret_Val);
 						form.appendChild(hiddenField4);
+						
+						var redirectURL_Val = 'https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
+						var hiddenField5 = document.createElement("input");
+						hiddenField5.setAttribute("type", "hidden");
+						hiddenField5.setAttribute("name", "redirect_url");
+						hiddenField5.setAttribute("value", redirectURL_Val);
+						form.appendChild(hiddenField5);
 				
 				document.body.appendChild(form);
 				alert('before submit form');
