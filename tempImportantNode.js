@@ -83,3 +83,4 @@ var tokenLink = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883
 
 //MainDebug URL
 var debugURL = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/authorize?client_id=0a07a77d-ee2e-477e-93ca-fd7f59421237&response_type=code';
+var debugURL2 = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/authorize?client_id=0a07a77d-ee2e-477e-93ca-fd7f59421237&response_type=code&state=12345&redirect_url=https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
