@@ -9,6 +9,25 @@
    		 window.onload = function () {
       		Formio.createForm(document.getElementById('formio'), loginForm); 
     	};
+		
+		/*window.addEventListener('load', function() {
+		
+			var webAuth = new auth0.WebAuth({
+				domain: 'mydomain.auth0.com',
+				redirectUri: 'http://localhost:3000/example',
+				clientID: '<CLIENT_ID>',
+				audience: 'https://<MY_API_URL>',
+				responseType: 'token id_token'
+				
+			});
+			
+			webAuth.redirect.loginWithCredentials({
+				connection: 'Username-Password-Authentication',
+				username: '<USERNAME>',
+				password: '<PASSWORD>',
+				scope: 'openid'
+			}, callback);
+		};*/
   	</script>
   </head>
   <body>
