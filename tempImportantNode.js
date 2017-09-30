@@ -84,3 +84,12 @@ var tokenLink = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883
 //MainDebug URL
 var debugURL = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/authorize?client_id=0a07a77d-ee2e-477e-93ca-fd7f59421237&response_type=code';
 var debugURL2 = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/authorize?client_id=0a07a77d-ee2e-477e-93ca-fd7f59421237&response_type=code&state=12345&redirect_url=https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
+
+
+
+
+
+
+http://kittipong-tst-webapp.azurewebsites.net/?code=AQABAAIAAAABlDrqfEFlSaui6xnRjX5EkswnuAa_6Rb7kTK4y8W3-tF8yb8GL5i-GlgytTpljMio0KazWgjCsrbxPQkt7SemQB_qGbd2iaHw0FNqwd9i3qNC6b5YJCITy46XDpNeC1mUFP8YuvA1oppIHuaw_t2RQ566g7IqMGNmOkGpRO81OI0hW4GWd3rI_iW8LXeZ0Szro_3kqHCQcNyBSV08U3La00ZbY2PILH4bpNqYU0ymmjYzQ9eWxczsxiXSaqCkpMqFoOKHbTAfg8RbwFSkWR38JxJEvmUZcXxoBOTmuTgjPhkeSur5OT4hqDtSDcxW__PQ3fmtH0lwKLgz7biczvmspnufFcmu0lWItyRM7jURCdrj-HxajVaiAwUo6RIrZB8LwofsSbsIbT_VAOq9MVdYAclLrKQOKELRII3Fo0qsUxNWNUVxYOErthTzQk7vR_as6t1fjfwv-ddPIEZbVE2mIsl6L-ykAFjsU70Ezrb7wGjoCDC284hYJvHuhWWnkIpcCZSOVWFeMJ4xSgHn21vJQjthicUZtXJCwt1q54FpOunL_3f46y2NSOx4NqzCqyockgZQmDAndbAOaD6-z2YeIAA&session_state=a585f39d-d81b-4e6e-b482-412df9a5935e
+
+http://kittipong-tst-webapp.azurewebsites.net/?error=invalid_request&error_description=AADSTS90014%3a+The+request+body+must+contain+the+following+parameter%3a+%27response_type%27.%0d%0aTrace+ID%3a+6269ccf9-92fa-47a8-abf1-b214d89d1000%0d%0aCorrelation+ID%3a+1a3feb37-4ad3-4219-b2ca-bdbf06fa015a%0d%0aTimestamp%3a+2017-09-30+17%3a05%3a43Z
