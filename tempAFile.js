@@ -8,3 +8,5 @@ console.log('password = '+form.submission.data.password);
 
 
 // ----------------   Working   Zone  ---------------------------
+var mainURL = window.location.href;
+console.log('mainURL = '+mainURL);
