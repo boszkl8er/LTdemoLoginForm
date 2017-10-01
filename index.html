@@ -33,15 +33,12 @@
 					var firstValue = '';
 					
 					if(findParam == firstParam){
+						console.log('first param');
 						firstValue = tmpURL.substring(tmpURL.indexOf('=')+1,tmpURL.length);
-						console.log('1 = '+firstValue);
 						
 						if(firstValue.indexOf('&')!=-1){
-							console.log('condition1');
 							firstValue = firstValue.substring(0,firstValue.indexOf('&'));
-							
 						}else{
-							console.log('condition2');
 							firstValue = firstValue.substring(0,firstValue.length);
 						}
 						code_Val = returnValue = firstValue;
@@ -50,6 +47,7 @@
 						//console.log('firstParam = '+firstParam);
 						//console.log('firstValue = '+firstValue);
 					}else{
+						console.log('not first param');
 						var paramArr = mainURL.split('&');
 						//console.log('paramArr.length = '+paramArr.length);
 						
