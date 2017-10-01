@@ -90,6 +90,7 @@ var debugURL2 = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883
 //======================================================================================================
 http://kittipong-tst-webapp.azurewebsites.net/?code=AQABAAIAAAABlDrqfEFlSaui6xnRjX5EesNAKgQmQ8OtC3mqyVyakjvbLN1bDOLikyDQKYQTYNJskrx6zAXn1b9qzqei-f0XbdgFqbYuyMaxeQnnEONT0QxpXQ1-u_NYQ6vz9p71UyrPUZ1eodvCN06zuAq7kywU0HgdD8qJJHMUFGR_d5QLA8tRCpVShQAmnyFbPaJC9a-YglJtQPm6Anc5m2eO2iG17ULkaGR9joIwkEELLYAc28pQnijBpTinNQI3EO8V6eNiwYbPi2iugh9vD-dCqv6rtzn02GPJ8nTqlsgd5Lb3UsZhaMQKJ6HP1ASMiigtIzX1llPuBI3Ufy5TOFkvQ1dNGelCn4NwtJxM1fJdHJxQZTuOr1uRrqx_5sNf0E7fCcyGxZSaY_Ww1UocrgiDlueacbsC8aSHzWNq4J3kRsQW_z8vBoNzpn5jUNt2_9jqsmP840Cv2kdv3HL0cRj66HsNCk9Wbx4LeuPeqLbb6wJGDg8Z5D9qJkpX6J4WNoe8cg2potBkRUQfTPrbFhuaWKEngsibqOotkAFliP3koEnFMZzm5xso2PIMR-nTNN1ai-FyyQUWlRS9Ax_jE0CxQlekIAA&session_state=3b8ec7ef-fffe-42b7-bb19-8519fc3b7df6
 
+http://kittipong-tst-webapp.azurewebsites.net/?code=AQABAAIAAAABlDrqfEFlSaui6xnRjX5E-JbuHuVehxATC1pdbf71IRN4jkVjy1ELvA7J1DKFNC3Q0vH0QKFy84Wcof7JxmNYFQsVrc2NF7rqOnM3zGn6CpfMtyZoU-8B-l3DObUe4OO1QbfqCad0CAab8Lp3BWUWdvpBeRVb9DNKbuYZHG2EPfpTDzxHMpCoykY7zNCmGrP-yWkzSJo13xmgYQunn13D1uO-CBKhkbttHlvFP84maOSLu78f-S6S6qylqTko47R8RK3r2bgr8oyBJhVu4Zz3Nu93al8wZS5oCU4ZUtqi7hxOYvLgYwTDYrA5PzA0IaaHh_ACB2bN-EwwGZlN9llwGjike996D3fkfRqzS-CItYFVnng1bguY0V2gluNbS5bD042m82WQ2ajaD78-5s64WRMYwb5B_1n0MzMGaBaRBxP-VnteuBZf8pyoPffl9Waf7qdn1YiX2g37eCBznzQcm67RdC7aYYMnW5DfNPpwTCOm1BH0AP2HUy3jjzC4_6xCy5Bc46l6GUAzkz5pu1RZG2qVHrFp-fb_lqHiZqpfocc6E0S92nLm3KYQzrJpAT_o2UhFn2AbodV8EZyn40O7IAA&session_state=3b8ec7ef-fffe-42b7-bb19-8519fc3b7df6
 //======================================================================================================
 //=========================================    Second time    ===========================================
 //======================================================================================================
@@ -97,9 +98,6 @@ http://kittipong-tst-webapp.azurewebsites.net/?error=invalid_request&error_descr
 //======================================================================================================
 
 
+{"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. Send a new interactive authorization request for this user and resource.\r\nTrace ID: ddaf4d10-b9e4-46a0-aa15-05059e331500\r\nCorrelation ID: e162811e-09a5-4f15-b08d-63a1c0944348\r\nTimestamp: 2017-10-01 09:36:12Z","error_codes":[70002,70008],"timestamp":"2017-10-01 09:36:12Z","trace_id":"ddaf4d10-b9e4-46a0-aa15-05059e331500","correlation_id":"e162811e-09a5-4f15-b08d-63a1c0944348"}
 
 
-
-http://kittipong-tst-webapp.azurewebsites.net/?code=AQABAAIAAAABlDrqfEFlSaui6xnRjX5EkswnuAa_6Rb7kTK4y8W3-tF8yb8GL5i-GlgytTpljMio0KazWgjCsrbxPQkt7SemQB_qGbd2iaHw0FNqwd9i3qNC6b5YJCITy46XDpNeC1mUFP8YuvA1oppIHuaw_t2RQ566g7IqMGNmOkGpRO81OI0hW4GWd3rI_iW8LXeZ0Szro_3kqHCQcNyBSV08U3La00ZbY2PILH4bpNqYU0ymmjYzQ9eWxczsxiXSaqCkpMqFoOKHbTAfg8RbwFSkWR38JxJEvmUZcXxoBOTmuTgjPhkeSur5OT4hqDtSDcxW__PQ3fmtH0lwKLgz7biczvmspnufFcmu0lWItyRM7jURCdrj-HxajVaiAwUo6RIrZB8LwofsSbsIbT_VAOq9MVdYAclLrKQOKELRII3Fo0qsUxNWNUVxYOErthTzQk7vR_as6t1fjfwv-ddPIEZbVE2mIsl6L-ykAFjsU70Ezrb7wGjoCDC284hYJvHuhWWnkIpcCZSOVWFeMJ4xSgHn21vJQjthicUZtXJCwt1q54FpOunL_3f46y2NSOx4NqzCqyockgZQmDAndbAOaD6-z2YeIAA&session_state=a585f39d-d81b-4e6e-b482-412df9a5935e
-
-http://kittipong-tst-webapp.azurewebsites.net/?error=invalid_request&error_description=AADSTS90014%3a+The+request+body+must+contain+the+following+parameter%3a+%27response_type%27.%0d%0aTrace+ID%3a+6269ccf9-92fa-47a8-abf1-b214d89d1000%0d%0aCorrelation+ID%3a+1a3feb37-4ad3-4219-b2ca-bdbf06fa015a%0d%0aTimestamp%3a+2017-09-30+17%3a05%3a43Z
