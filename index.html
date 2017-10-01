@@ -40,8 +40,10 @@
 							firstValue = firstValue.substring(0,tmpURL.length);
 						}
 						returnValue = firstValue;
-						console.log('firstParam = '+firstParam);
-						console.log('firstValue = '+firstValue);
+						console.log(findParam+'='+returnValue);
+						
+						//console.log('firstParam = '+firstParam);
+						//console.log('firstValue = '+firstValue);
 					}else{
 						var paramArr = mainURL.split('&');
 						console.log('paramArr.length = '+paramArr.length);
@@ -49,10 +51,11 @@
 						for(var i = 0 ; i < paramArr.length ; i++){
 							var paramName = paramArr[i].substring(0,paramArr[i].indexOf('='));
 							var paramValue = paramArr[i].substring(paramArr[i].indexOf('=')+1,paramArr[i].length);
-							console.log(paramName+'='+paramValue);
+							//console.log(paramName+'='+paramValue);
 					
 							if(findParam == paramName){
 								returnValue = paramValue;
+								console.log(findParam+'='+returnValue);
 							}
 						}
 					}
