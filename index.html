@@ -122,12 +122,12 @@
 						hiddenField5.setAttribute("value", redirectURL_Val);
 						form.appendChild(hiddenField5);
 						
-						//var resource_Val = 'https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
-						//var hiddenField6 = document.createElement("input");
-						//hiddenField6.setAttribute("type", "hidden");
-						//hiddenField6.setAttribute("name", "resource");
-						//hiddenField6.setAttribute("value", resource_Val);
-						//form.appendChild(hiddenField6);
+						var resource_Val = 'https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
+						var hiddenField6 = document.createElement("input");
+						hiddenField6.setAttribute("type", "hidden");
+						hiddenField6.setAttribute("name", "resource");
+						hiddenField6.setAttribute("value", resource_Val);
+						form.appendChild(hiddenField6);
 				
 					document.body.appendChild(form);
 					console.log('before submit form3');
