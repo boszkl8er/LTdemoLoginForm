@@ -18,27 +18,25 @@
 			console.log('mainURL = '+mainURL);
 			
 			//------------- get code variable form URL -----------------
+			//========================================================================================
 			var code_Val = '';
 			
-			
+			var findParam = 'code';
 			//function getParamFromURL(mainURL,param){
 			
-				var debugURL = '';
+				var tmpURL = '';
 				if(mainURL.indexOf('?')!=-1){
-					debugURL = mainURL.substring(mainURL.indexOf('?')+1,mainURL.length);
-					console.log('debugURL = '+debugURL);
-					var firstParam = debugURL.substring(0,debugURL.indexOf('='));
-					console.log('firstParam = '+firstParam);
-					
+					tmpURL = mainURL.substring(mainURL.indexOf('?')+1,mainURL.length);
+					var firstParam = tmpURL.substring(0,tmpURL.indexOf('='));
 					var firstValue = '';
-					if(firstParam == 'code'){
-						firstValue = debugURL.substring(debugURL.indexOf('=')+1,debugURL.length);
-						console.log('firstValue = '+firstValue);
+					
+					if(firstParam == findParam){
+						firstValue = tmpURL.substring(tmpURL.indexOf('=')+1,tmpURL.length);
 						
 						if(firstValue.indexOf('&')!=-1){
-							firstValue = firstValue.substring(0,debugURL.indexOf('&'));
+							firstValue = firstValue.substring(0,tmpURL.indexOf('&'));
 						}else{
-							firstValue = firstValue.substring(0,debugURL.length);
+							firstValue = firstValue.substring(0,tmpURL.length);
 						}
 						console.log('firstParam = '+firstParam);
 						console.log('firstValue = '+firstValue);
@@ -48,11 +46,11 @@
 				var paramArr = mainURL.split('&');
 				console.log('paramArr.length = '+paramArr.length);
 				for(var i = 0 ; i < paramArr.length ; i++){
-					var paramArr = mainURL.split('&');
+					console.log('paramArr = '+paramArr[i]);
 				}
 			//}
-			
 			return;
+			//=======================================================================================
 			//function get 
 			//-----------------------------------------------------------
 			//function post
