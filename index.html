@@ -22,8 +22,8 @@
 			var code_Val = '';
 			
 			var returnValue = '';
-			//var findParam = 'code';
-			var findParam = 'session_state';
+			var findParam = 'code';
+			//var findParam = 'session_state';
 			//function getParamFromURL(mainURL,param){
 			
 				var tmpURL = '';
@@ -40,14 +40,14 @@
 						}else{
 							firstValue = firstValue.substring(0,tmpURL.length);
 						}
-						returnValue = firstValue;
+						code_Val = returnValue = firstValue;
 						console.log(findParam+'='+returnValue);
 						
 						//console.log('firstParam = '+firstParam);
 						//console.log('firstValue = '+firstValue);
 					}else{
 						var paramArr = mainURL.split('&');
-						console.log('paramArr.length = '+paramArr.length);
+						//console.log('paramArr.length = '+paramArr.length);
 						
 						for(var i = 0 ; i < paramArr.length ; i++){
 							var paramName = paramArr[i].substring(0,paramArr[i].indexOf('='));
@@ -55,7 +55,7 @@
 							//console.log(paramName+'='+paramValue);
 					
 							if(findParam == paramName){
-								returnValue = paramValue;
+								code_Val = returnValue = paramValue;
 								console.log(findParam+'='+returnValue);
 							}
 						}
@@ -63,7 +63,7 @@
 				}
 			
 			//}
-			return;
+
 			//=======================================================================================
 			//function get 
 			//-----------------------------------------------------------
