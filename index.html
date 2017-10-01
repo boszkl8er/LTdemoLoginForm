@@ -25,7 +25,8 @@
 			
 				var debugURL = '';
 				if(mainURL.indexOf('?')!=-1){
-					debugURL = mainURL.substring(mainURL.indexOf('?'));
+					console.log('mainURL = '+mainURL);
+					debugURL = mainURL.substring(mainURL.indexOf('?'),mainURL);
 					console.log('debugURL = '+debugURL);
 				}
 			
