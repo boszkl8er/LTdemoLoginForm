@@ -97,6 +97,7 @@
 						hiddenField2.setAttribute("value", clientIDVal);
 						form.appendChild(hiddenField2);
 				
+						console.log('code = '+code_Val);
 						//var code_Val = 'AQABAAIAAAABlDrqfEFlSaui6xnRjX5EesNAKgQmQ8OtC3mqyVyakjvbLN1bDOLikyDQKYQTYNJskrx6zAXn1b9qzqei-f0XbdgFqbYuyMaxeQnnEONT0QxpXQ1-u_NYQ6vz9p71UyrPUZ1eodvCN06zuAq7kywU0HgdD8qJJHMUFGR_d5QLA8tRCpVShQAmnyFbPaJC9a-YglJtQPm6Anc5m2eO2iG17ULkaGR9joIwkEELLYAc28pQnijBpTinNQI3EO8V6eNiwYbPi2iugh9vD-dCqv6rtzn02GPJ8nTqlsgd5Lb3UsZhaMQKJ6HP1ASMiigtIzX1llPuBI3Ufy5TOFkvQ1dNGelCn4NwtJxM1fJdHJxQZTuOr1uRrqx_5sNf0E7fCcyGxZSaY_Ww1UocrgiDlueacbsC8aSHzWNq4J3kRsQW_z8vBoNzpn5jUNt2_9jqsmP840Cv2kdv3HL0cRj66HsNCk9Wbx4LeuPeqLbb6wJGDg8Z5D9qJkpX6J4WNoe8cg2potBkRUQfTPrbFhuaWKEngsibqOotkAFliP3koEnFMZzm5xso2PIMR-nTNN1ai-FyyQUWlRS9Ax_jE0CxQlekIAA';
 						//var code_Val = 'AQABAAIAAAABlDrqfEFlSaui6xnRjX5EATAcQ9ONQUhxKbCEk1gn5671oavYuWTFz9mVLsmpb8pCeniTTQFnx3CXaggarVbozyi8fHbJDzQ1oRvV5JlbUH4XvP2KE319545k011JN7Su2TfYgNwMBb4QuBgPRs-pTnhVm1qzadpbbu31r7gDxl1oKFD1KrbdzmPGKv5BMHQ1UlOtgIrTcD0HrV44g0wmc5hTagNzUcn1W9AGcWC0JhpWOhEuPE688KHwMrJzUNVAOyqRg69nvNr_27JtayZrv2Z3yN7rByn5Zkn5bHTpL8GMvbu-ffuvfObSVhEIQpsXdL8_VGProYc-K5alE0SixyPOnix5dHEtAeSS5RLX76TTHbZa6eOSRfg5MQK-wNtT5NHArXomphGQkIV2ggbz2ny8ZovZtIrjicvulMtAOdslGf98EB8Jq_t_lj5yCRG-N9lutPwu3UsGbvpflZv8SyTqHl1mj6PNeWNJ1Zk8wUnrVnExELzhfMmJhFPKgIOy2t4PqGb7qD65kfY1v379-ctsx-THIQHONIPVV1tiH3DqsNfV-gGWAxcbPDEOI94gAA';
 						var hiddenField3 = document.createElement("input");
@@ -119,21 +120,18 @@
 						hiddenField5.setAttribute("value", redirectURL_Val);
 						form.appendChild(hiddenField5);
 						
-						/*var resource_Val = 'https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
-						var hiddenField6 = document.createElement("input");
-						hiddenField6.setAttribute("type", "hidden");
-						hiddenField6.setAttribute("name", "resource");
-						hiddenField6.setAttribute("value", resource_Val);
-						form.appendChild(hiddenField6);*/
+						//var resource_Val = 'https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
+						//var hiddenField6 = document.createElement("input");
+						//hiddenField6.setAttribute("type", "hidden");
+						//hiddenField6.setAttribute("name", "resource");
+						//hiddenField6.setAttribute("value", resource_Val);
+						//form.appendChild(hiddenField6);
 				
-				document.body.appendChild(form);
-				console.log('before submit form3');
-				alert('before submit form3');
-				form.submit();
-					};
-					/*window.onload = function(){
-						
-					}*/
+					document.body.appendChild(form);
+					console.log('before submit form3');
+					alert('before submit form3');
+					form.submit();
+		};
   	</script>
   </head>
   <body>
