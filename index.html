@@ -21,6 +21,7 @@
 			//========================================================================================
 			var code_Val = '';
 			
+			var returnValue = '';
 			var findParam = 'code';
 			//function getParamFromURL(mainURL,param){
 			
@@ -30,7 +31,7 @@
 					var firstParam = tmpURL.substring(0,tmpURL.indexOf('='));
 					var firstValue = '';
 					
-					if(firstParam == findParam){
+					if(findParam == firstParam){
 						firstValue = tmpURL.substring(tmpURL.indexOf('=')+1,tmpURL.length);
 						
 						if(firstValue.indexOf('&')!=-1){
@@ -38,20 +39,25 @@
 						}else{
 							firstValue = firstValue.substring(0,tmpURL.length);
 						}
+						returnValue = firstValue;
 						console.log('firstParam = '+firstParam);
 						console.log('firstValue = '+firstValue);
+					}else{
+						var paramArr = mainURL.split('&');
+						console.log('paramArr.length = '+paramArr.length);
+						
+						for(var i = 0 ; i < paramArr.length ; i++){
+							var paramName = paramArr[i].substring(0,paramArr[i].indexOf('='));
+							var paramValue = paramArr[i].substring(paramArr[i].indexOf('=')+1,paramArr[i].length);
+							console.log(paramName+'='+paramValue);
+					
+							if(findParam == paramName){
+								returnValue = paramValue;
+							}
+						}
 					}
 				}
 			
-				var paramArr = mainURL.split('&');
-				console.log('paramArr.length = '+paramArr.length);
-				for(var i = 0 ; i < paramArr.length ; i++){
-					console.log('paramArr['+i+'] ='+paramArr[i]);
-					
-					var paramName = paramArr[i].substring(0,paramArr[i].indexOf('='));
-					var paramValue = paramArr[i].substring(paramArr[i].indexOf('=')+1,paramArr[i].length);
-					console.log(paramName+'='+paramValue);
-				}
 			//}
 			return;
 			//=======================================================================================
