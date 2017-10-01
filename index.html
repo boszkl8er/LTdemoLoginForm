@@ -20,7 +20,7 @@
 			//------------- get code variable form URL -----------------
 			var code_Val = '';
 			
-			
+			console.log('debud0');
 			//function getParameterByName(name, url) {
 				if (!mainURL) mainURL = mainURL;
 				name = name.replace(/[\[\]]/g, "\\$&");
@@ -30,6 +30,7 @@
 				if (!results[2]) return '';
 				//return decodeURIComponent(results[2].replace(/\+/g, " "));
 				
+				console.log('debug1');
 				code_Val = decodeURIComponent(results[2].replace(/\+/g, " "));
 				
 				console.log('code_Val = '+code_Val);
