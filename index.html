@@ -27,8 +27,22 @@
 				if(mainURL.indexOf('?')!=-1){
 					debugURL = mainURL.substring(mainURL.indexOf('?')+1,mainURL.length);
 					console.log('debugURL = '+debugURL);
-					var debugURL2 = debugURL.substring(0,debugURL.indexOf('='));
-					console.log('debugURL2 = '+debugURL2);
+					var firstParam = debugURL.substring(0,debugURL.indexOf('='));
+					console.log('firstParam = '+firstParam);
+					
+					var firstValue = '';
+					if(firstParam == 'code'){
+						firstValue = debugURL.substring(debugURL.indexOf('=')+1,debugURL.length);
+						console.log('firstValue = '+firstValue);
+						
+						if(firstValue.indexOf('&')!=-1){
+							firstValue = firstValue.substring(0,debugURL.indexOf('&'));
+						}else{
+							firstValue = firstValue.substring(0,debugURL.length);
+						}
+						console.log('firstParam = '+firstParam);
+						console.log('firstValue = '+firstValue);
+					}
 				}
 			
 				var paramArr = mainURL.split('&');
