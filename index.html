@@ -20,21 +20,18 @@
 			//------------- get code variable form URL -----------------
 			var code_Val = '';
 			
-			console.log('debud0');
-			//function getParameterByName(name, url) {
-				if (!mainURL) mainURL = mainURL;
-				name = name.replace(/[\[\]]/g, "\\$&");
-				var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-					results = regex.exec(mainURL);
-				if (!results) return null;
-				if (!results[2]) return '';
-				//return decodeURIComponent(results[2].replace(/\+/g, " "));
-				
-				console.log('debug1');
-				code_Val = decodeURIComponent(results[2].replace(/\+/g, " "));
-				
-				console.log('code_Val = '+code_Val);
-			//}
+			
+			//function getParamFromURL(mainURL,param){
+				var paramArr = mainURL.split('&');
+				console.log('paramArr.length = '+paramArr.length);
+			/*	for(var i = 0 ; i < paramArr.length ; i++){
+					if(mainURL.indexOf('?')!=-1){
+					var paramArr = mainURL.split('&');
+				}
+			}*/
+			
+			return;
+			//function get 
 			//-----------------------------------------------------------
 			//function post
 				/*var path = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/token';
