@@ -34,11 +34,15 @@
 					
 					if(findParam == firstParam){
 						firstValue = tmpURL.substring(tmpURL.indexOf('=')+1,tmpURL.length);
+						console.log('1 = '+firstValue);
 						
 						if(firstValue.indexOf('&')!=-1){
-							firstValue = firstValue.substring(0,tmpURL.indexOf('&'));
+							console.log('condition1');
+							firstValue = firstValue.substring(0,firstValue.indexOf('&'));
+							
 						}else{
-							firstValue = firstValue.substring(0,tmpURL.length);
+							console.log('condition2');
+							firstValue = firstValue.substring(0,firstValue.length);
 						}
 						code_Val = returnValue = firstValue;
 						console.log(findParam+'='+returnValue);
