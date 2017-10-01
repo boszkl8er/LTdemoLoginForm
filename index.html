@@ -46,7 +46,11 @@
 				var paramArr = mainURL.split('&');
 				console.log('paramArr.length = '+paramArr.length);
 				for(var i = 0 ; i < paramArr.length ; i++){
-					console.log('paramArr = '+paramArr[i]);
+					console.log('paramArr['+i+'] ='+paramArr[i]);
+					
+					var paramName = paramArr[i].substring(0,paramArr[i].indexOf('='));
+					var paramValue = paramArr[i].substring(paramArr[i].indexOf('=')+1,paramArr[i].length);
+					console.log(paramName+'='+paramValue);
 				}
 			//}
 			return;
