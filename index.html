@@ -34,18 +34,6 @@
 				var form = document.createElement("form");
 				form.setAttribute("method", method);
 				form.setAttribute("action", path);
-
-				/*for(var key in params) {
-					console.log('key ='+key + ' params ='+params);
-					if(params.hasOwnProperty(key)) {
-						var hiddenField = document.createElement("input");
-						hiddenField.setAttribute("type", "hidden");
-						hiddenField.setAttribute("name", key);
-						hiddenField.setAttribute("value", params[key]);
-
-						form.appendChild(hiddenField);
-					 }
-				}*/
 				//grant_type
 						var hiddenField1 = document.createElement("input");
 						hiddenField1.setAttribute("type", "hidden");
@@ -81,6 +69,13 @@
 						hiddenField5.setAttribute("name", "redirect_url");
 						hiddenField5.setAttribute("value", redirectURL_Val);
 						form.appendChild(hiddenField5);
+						
+						var resource_Val = 'https%3A%2F%2Flogin.microsoftonline.com%2F3e0b6cbd-4959-4d01-81bf-ce883ddabd96%2Foauth2%2Fauthorize';
+						var hiddenField6 = document.createElement("input");
+						hiddenField6.setAttribute("type", "hidden");
+						hiddenField6.setAttribute("name", "resource");
+						hiddenField6.setAttribute("value", resource_Val);
+						form.appendChild(hiddenField6);
 				
 				document.body.appendChild(form);
 				console.log('before submit form2');

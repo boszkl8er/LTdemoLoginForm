@@ -100,4 +100,4 @@ http://kittipong-tst-webapp.azurewebsites.net/?error=invalid_request&error_descr
 
 {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. Send a new interactive authorization request for this user and resource.\r\nTrace ID: ddaf4d10-b9e4-46a0-aa15-05059e331500\r\nCorrelation ID: e162811e-09a5-4f15-b08d-63a1c0944348\r\nTimestamp: 2017-10-01 09:36:12Z","error_codes":[70002,70008],"timestamp":"2017-10-01 09:36:12Z","trace_id":"ddaf4d10-b9e4-46a0-aa15-05059e331500","correlation_id":"e162811e-09a5-4f15-b08d-63a1c0944348"}
 
-
+{"error":"invalid_resource","error_description":"AADSTS50001: Resource identifier is not provided.\r\nTrace ID: 7ffa06a6-21e7-440a-8372-01b8d3e31400\r\nCorrelation ID: 0c21fa16-5afc-4051-ba6c-d434ab2cdc1d\r\nTimestamp: 2017-10-01 09:40:09Z","error_codes":[50001],"timestamp":"2017-10-01 09:40:09Z","trace_id":"7ffa06a6-21e7-440a-8372-01b8d3e31400","correlation_id":"0c21fa16-5afc-4051-ba6c-d434ab2cdc1d"}
