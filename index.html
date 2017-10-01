@@ -22,13 +22,19 @@
 			
 			
 			//function getParamFromURL(mainURL,param){
+			
+				var debugURL = '';
+				if(mainURL.indexOf('?')!=-1){
+					debugURL = mainURL.substring(mainURL.indexOf('?'),mainURL.length);
+					console.log('debugURL = '+debugURL);
+				}
+			
 				var paramArr = mainURL.split('&');
 				console.log('paramArr.length = '+paramArr.length);
-			/*	for(var i = 0 ; i < paramArr.length ; i++){
-					if(mainURL.indexOf('?')!=-1){
+				for(var i = 0 ; i < paramArr.length ; i++){
 					var paramArr = mainURL.split('&');
 				}
-			}*/
+			//}
 			
 			return;
 			//function get 
