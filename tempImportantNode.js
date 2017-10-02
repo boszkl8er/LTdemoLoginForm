@@ -80,6 +80,7 @@ var receiptLink4 = 'http://kittipong-tst-webapp.azurewebsites.net/?code=AQABAAIA
 var tokenLink = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/token?client_id=0a07a77d-ee2e-477e-93ca-fd7f59421237';
 
 
+var webAPI = 'https://together.at/a3d43fa1-50ce-409c-917f-b800d1771c17.WebAPI';
 
 //MainDebug URL
 var debugURL = 'https://login.microsoftonline.com/3e0b6cbd-4959-4d01-81bf-ce883ddabd96/oauth2/authorize?client_id=0a07a77d-ee2e-477e-93ca-fd7f59421237&response_type=code';
