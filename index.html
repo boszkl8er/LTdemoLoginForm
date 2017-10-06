@@ -26,7 +26,7 @@
   <!-- <body>
 		<div id='formio'></div>
   </body> -->
-  <body ng-app="catApp" ng-controller="homeCtrl" role="document">
+  <body id="testBody" ng-app="catApp" ng-controller="homeCtrl" role="document">
   
 		<script src="resource/jquery-1.11.1.min.js"></script>
 		<script src="resource/angular.min.js"></script>
@@ -59,60 +59,26 @@
 				//angular.element(document.getElementById('homeCtrl')).injector().‌​get('$rootScope');
 				
 				//v3
-				var testCall1 = angular.element(document.getElementById('homeCtrl'));
-				console.log('testcall1 = '+testCall1);
+				//var testCall1 = angular.element(document.getElementById('homeCtrl'));
+				//console.log('testcall1 = '+testCall1);
 				
-				var testCall2 = angular.element(document.getElementById('homeCtrl')).scope();
+				/*var testCall2 = angular.element(document.getElementById('homeCtrl')).scope();
 				console.log('testcall2 = '+testCall2);
 				
 				var testCall3 = angular.element(document.getElementById('homeCtrl')).injector();
 				console.log('testcall3 = '+testCall3);
 				
 				var testCall4 = angular.element(document.getElementById('homeCtrl')).login();
-				console.log('testcall4 = '+testCall4);
+				console.log('testcall4 = '+testCall4);*/
 				
-			
-				console.log('dd');
+				//Working
+				//angular.element(document.getElementById('testBody')).scope().login();
 			});
-			/*$(document).ready ( function () {
-				   $('input[type="button"][name="data[submit]"]').on('click', function(){
-					alert("Night button clicked");
-				   });
-				});*/
 		}
 		</script>
 		
 		<div id='formio'>
 	
 		</div>
-		
-		 <!-- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse">
-
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/Home">SPA Auth Demo</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li ng-class="{ active: isActive('/Home') }"><a href="#/Home">Home</a></li>
-                    <li ng-class="{ active: isActive('/CatList') }"><a href="#/CatList">Cat List</a></li>
-                    <li ng-class="{ active: isActive('/UserData') }"><a href="#/UserData" ng-show="userInfo.isAuthenticated">User</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a></li>
-                    <li><a class="btn btn-link" ng-hide=" userInfo.isAuthenticated" ng-click="login()">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-		<!-- <li><a ng-click="login()">Login</a></li> -->
-		 <button ng-click="login()" class="btn btn-primary" >LOG IN</button>
   </body>
 </html>
