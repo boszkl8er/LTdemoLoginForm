@@ -13,17 +13,41 @@
 	<!-- include Auth0 -->
 	<script src="auth0.min.js"></script>
   	<script type="text/javascript" language="javascript" src="loginForm.json"></script>
- 	 <script type='text/javascript'>
+ 	 <!-- <script type='text/javascript'>
    		 window.onload = function () {
       		Formio.createForm(document.getElementById('formio'), loginForm); 
 			console.log('after createForm');
 		}
-  	</script>
+  	</script> -->
 	<!-- ==============  Debug  Zone  ==================== -->
 	
 	<!-- ================================================= -->
   </head>
-  <body>
+  <!-- <body>
 		<div id='formio'></div>
+  </body>-->
+  <body ng-app="catApp" ng-controller="homeCtrl" role="document">
+		<!-- ==================  All import script  ====================== -->
+		<script src="resource/jquery-1.11.1.min.js"></script>
+		<script src="resource/angular.min.js"></script>
+		<script src="resource/angular-route.js"></script>
+		
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="App/Scripts/adal.js"></script>
+        <script src="App/Scripts/adal-angular.js"></script>
+        <script src="App/Scripts/app.js"></script>
+        <script src="App/Scripts/homeCtrl.js"></script>
+        <script src="App/Scripts/userDataCtrl.js"></script>
+        <script src="App/Scripts/catListCtrl.js"></script>
+        <script src="App/Scripts/catListSvc.js"></script>
+		<!-- ============================================================= -->
+		
+		<script type='text/javascript'>
+			 window.onload = function () {
+				Formio.createForm(document.getElementById('formio'), loginForm); 
+				console.log('after createForm');
+			}
+		</script>
+		
   </body>
 </html>
