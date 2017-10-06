@@ -11,7 +11,7 @@
   	<script src='https://unpkg.com/formiojs@latest/dist/formio.full.min.js'></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- include Auth0 -->
-	<script src="auth0.min.js"></script>
+	<!-- <script src="auth0.min.js"></script> -->
   	<script type="text/javascript" language="javascript" src="loginForm.json"></script>
  	 <!-- <script type='text/javascript'>
    		 window.onload = function () {
@@ -41,10 +41,22 @@
         <script src="App/Scripts/catListCtrl.js"></script>
         <script src="App/Scripts/catListSvc.js"></script>
 		
+		
 		<script type='text/javascript'>
-			 window.onload = function () {
-				Formio.createForm(document.getElementById('formio'), loginForm); 
-				console.log('after createForm');
+   		 window.onload = function () {
+      		Formio.createForm(document.getElementById('formio'), loginForm); 
+			console.log('after createForm');
+			
+			var submitButton = document.getElementById("formio");
+			console.log("submit button = "+submitButton);
+			submitButton.addEventListener("click",function(e){
+				console.log('addEventListener');
+			});
+			/*$(document).ready ( function () {
+				   $('input[type="button"][name="data[submit]"]').on('click', function(){
+					alert("Night button clicked");
+				   });
+				});*/
 			}
 		</script>
 		
